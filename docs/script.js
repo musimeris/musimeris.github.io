@@ -19,6 +19,10 @@ function encrypt(){
     return texto;
 }
 
+function validarInput() {
+    document.getElementById("toencrypt").disabled = !document.getElementById("txtencrypt").value.length;
+  }
+
 function uncrypt(){
     
     var texto = document.getElementById("txtencrypt").value.toLowerCase();

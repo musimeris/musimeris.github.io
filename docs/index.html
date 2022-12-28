@@ -9,17 +9,17 @@
     <title>Encrpyt Text</title>
 </head>
 <body>
-    <div class="grid-logo">
-        <img src="logo.png" alt="logo-alura">
-    </div>
+   
     <div id="formcry" class="grid">
-        
+        <div class="grid-logo">
+            <img src="logo.png" alt="logo-alura">
+        </div>
         <div  class="gridecnrypt" >
-            <textarea class="txt-area1" placeholder="text here" type="text" id="txtencrypt"></textarea>
+            <textarea class="txt-area1" placeholder="text here" type="text" id="txtencrypt"  ></textarea>
         </div>   
         
         <div id ="divimg"class="imgdesp">
-            <img src="img.png" alt="imagen-desaparecer" height="70%" width="70%">
+            <img id="imagendesp" src="img.png" alt="imagen-desaparecer" height="70%" width="70%">
             <p class="textocultar">Nigun texto encontrado.</p> 
             
         </div>
@@ -28,7 +28,7 @@
             <textarea class="form-control" placeholder="Ingrese el texto a Encriptar" id="areaencrypt" title="aname" rows="6" cols="60"></textarea>              
         </div>
 
-        <div id="sec-btn">
+        <div id="sec-btn" class="sec-btn1">
             <button type="button" class="btn-cry" id="toencrypt"  onclick= "encrypt()">Encriptar</button>
             <button type="button" class="button2" id="unencrypt" onclick= "uncrypt()">Desencriptar</button>
         </div>
